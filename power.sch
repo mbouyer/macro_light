@@ -1,0 +1,290 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip-local
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1662 U1
+U 1 1 5C07DF3E
+P 5250 3650
+F 0 "U1" H 5250 3950 60  0000 C CNN
+F 1 "MCP1662" H 5250 3300 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 5250 3650 60  0001 C CNN
+F 3 "" H 5250 3650 60  0001 C CNN
+	1    5250 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small D1
+U 1 1 5C07DFDD
+P 5900 3200
+F 0 "D1" H 5850 3280 50  0000 L CNN
+F 1 " PMEG4005EGWX " H 5750 3120 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123" V 5900 3200 50  0001 C CNN
+F 3 "" V 5900 3200 50  0001 C CNN
+	1    5900 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_Reed SW1
+U 1 1 5C07E0DB
+P 4500 3700
+F 0 "SW1" H 4500 3800 50  0000 C CNN
+F 1 "SW_Reed" H 4500 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5C07E186
+P 5200 3200
+F 0 "L1" H 5230 3240 50  0000 L CNN
+F 1 "10µ" H 5230 3160 50  0000 L CNN
+F 2 "Inductors:Inductor_Taiyo-Yuden_NR-40xx_HandSoldering" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+F 4 "NRS4018T100MDGJ" H 5200 3200 60  0001 C CNN "P/N"
+	1    5200 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5C07E27F
+P 6750 3550
+F 0 "C3" H 6760 3620 50  0000 L CNN
+F 1 "6,8µF 50V" H 6760 3470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6750 3550 50  0001 C CNN
+F 3 "" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5C07E362
+P 4050 3850
+F 0 "C2" H 4060 3920 50  0000 L CNN
+F 1 "10µF 35V" H 4060 3770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4050 3850 50  0001 C CNN
+F 3 "" H 4050 3850 50  0001 C CNN
+	1    4050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C1
+U 1 1 5C07E5BE
+P 3600 3850
+F 0 "C1" H 3610 3920 50  0000 L CNN
+F 1 "47µF 10V" H 3610 3770 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-U_EIA-6032-15_Hand" H 3600 3850 50  0001 C CNN
+F 3 "" H 3600 3850 50  0001 C CNN
+	1    3600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 5C07E68F
+P 6400 3950
+F 0 "R3" H 6430 3970 50  0000 L CNN
+F 1 "15" H 6430 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6400 3950 50  0001 C CNN
+F 3 "" H 6400 3950 50  0001 C CNN
+	1    6400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5C07E765
+P 3050 3800
+F 0 "BT1" H 3150 3900 50  0000 L CNN
+F 1 "Battery 3V" H 3150 3800 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" V 3050 3860 50  0001 C CNN
+F 3 "" V 3050 3860 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5C07EA97
+P 6400 3550
+F 0 "D2" H 6400 3650 50  0000 C CNN
+F 1 "LED x 6" H 6400 3450 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 6400 3550 50  0001 C CNN
+F 3 "" H 6400 3550 50  0001 C CNN
+	1    6400 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 5C07EC64
+P 6650 3950
+F 0 "R4" H 6680 3970 50  0000 L CNN
+F 1 "15" H 6680 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6650 3950 50  0001 C CNN
+F 3 "" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5C07ED47
+P 6200 3950
+F 0 "R2" H 6230 3970 50  0000 L CNN
+F 1 "30" H 6230 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6200 3950 50  0001 C CNN
+F 3 "" H 6200 3950 50  0001 C CNN
+	1    6200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5C07EEBB
+P 4500 4100
+F 0 "R1" H 4530 4120 50  0000 L CNN
+F 1 "100K" H 4530 4060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4500 4100 50  0001 C CNN
+F 3 "" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3600 3050 3500
+Wire Wire Line
+	3050 3500 4750 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4500 3200 5100 3200
+Wire Wire Line
+	5300 3200 5800 3200
+Wire Wire Line
+	5750 3500 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	4750 3800 4750 3950
+Wire Wire Line
+	3050 4000 3050 4250
+Wire Wire Line
+	3050 4250 6400 4250
+Wire Wire Line
+	6400 4250 6400 4050
+Wire Wire Line
+	6200 4050 6200 4150
+Wire Wire Line
+	6200 4150 6750 4150
+Connection ~ 6400 4150
+Wire Wire Line
+	6650 4150 6650 4050
+Wire Wire Line
+	6000 3200 6750 3200
+Wire Wire Line
+	6400 3200 6400 3400
+Wire Wire Line
+	6400 3700 6400 3850
+Wire Wire Line
+	6200 3850 6200 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6650 3800 6650 3850
+Wire Wire Line
+	6750 3200 6750 3450
+Connection ~ 6400 3200
+Wire Wire Line
+	6750 4150 6750 3650
+Connection ~ 6650 3800
+Connection ~ 6200 3800
+Wire Wire Line
+	5750 3650 5850 3650
+Wire Wire Line
+	5850 3650 5850 4250
+Connection ~ 5850 4250
+Wire Wire Line
+	4500 3900 4500 4000
+Wire Wire Line
+	4500 4200 4500 4250
+Connection ~ 4500 4250
+Wire Wire Line
+	4750 3950 4500 3950
+Connection ~ 4500 3950
+Wire Wire Line
+	4050 3950 4050 4450
+Connection ~ 4050 4250
+Connection ~ 3600 4250
+Wire Wire Line
+	4500 3200 4500 3500
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5C07FA11
+P 4050 3350
+F 0 "#FLG01" H 4050 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 3500 50  0000 C CNN
+F 2 "" H 4050 3350 50  0001 C CNN
+F 3 "" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5C07FA4A
+P 4050 4450
+F 0 "#FLG02" H 4050 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 4600 50  0000 C CNN
+F 2 "" H 4050 4450 50  0001 C CNN
+F 3 "" H 4050 4450 50  0001 C CNN
+	1    4050 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3350 4050 3750
+Connection ~ 4050 3500
+Wire Wire Line
+	3600 3750 3600 3500
+Connection ~ 3600 3500
+Wire Wire Line
+	3600 3950 3600 4250
+Connection ~ 6650 4150
+Wire Wire Line
+	5750 3800 6650 3800
+$EndSCHEMATC
